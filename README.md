@@ -19,6 +19,10 @@ Este repositório contém os projetos e atividades da disciplina de **Desenvolvi
 > [!IMPORTANT] 
 > Os arquivos referentes à **Atividade 2 (09/03)** foram mantidos na raiz do repositório para preservar o histórico original de commit e horário de entrega.
 
+### Atividade 03 - Flexbox (CSS) (Aula 16/03)
+* **Foco:** Criação de layout moderno utilizando **Flexbox** para alinhamento de componentes e distribuição de conteúdo
+* **Organização:** Estrutura baseada em cartões (Cards) para os temas Tecnologia, Esporte e Educação
+* **Conceitos Aplicados:** `display: flex` no contêiner principal, `flex-direction: column` dentro dos cartões, `flex-grow: 1` para alinhamento dos botões no cartão
 ---
 > [!NOTE]
 > Os nomes das atividades seguem o padrão passado em sala, mesmo havendo repetição na numeração.
