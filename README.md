@@ -23,6 +23,10 @@ Este repositório contém os projetos e atividades da disciplina de **Desenvolvi
 * **Foco:** Criação de layout moderno utilizando **Flexbox** para alinhamento de componentes e distribuição de conteúdo
 * **Organização:** Estrutura baseada em cartões (Cards) para os temas Tecnologia, Esporte e Educação
 * **Conceitos Aplicados:** `display: flex` no contêiner principal, `flex-direction: column` dentro dos cartões, `flex-grow: 1` para alinhamento dos botões no cartão
+
+### Atividade 03 - Flexbox (CSS) Update (Aula 23/03)
+* **Foco:** Implementação de **Responsividade** para garantir a adaptação do layout em diferentes dispositivos (Mobile, Tablet e Desktop)
+* **Conceitos Aplicados:** Uso de `@media queries` para ajuste de empilhamento de cards em telas menores e substituição de larguras fixas por propriedades flexíveis (`flex`, `max-width`)
 ---
 > [!NOTE]
 > Os nomes das atividades seguem o padrão passado em sala, mesmo havendo repetição na numeração.
