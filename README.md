@@ -27,6 +27,12 @@ Este repositório contém os projetos e atividades da disciplina de **Desenvolvi
 ### Atividade 03 - Flexbox (CSS) Update (Aula 23/03)
 * **Foco:** Implementação de **Responsividade** para garantir a adaptação do layout em diferentes dispositivos (Mobile, Tablet e Desktop)
 * **Conceitos Aplicados:** Uso de `@media queries` para ajuste de empilhamento de cards em telas menores e substituição de larguras fixas por propriedades flexíveis (`flex`, `max-width`)
+
+### Atividade 04 - Animação, variáveis e display do tipo Flex (Aula 30/03)
+* **Foco:** Replicação do layout ("FlexSite") com menu lateral interativo e tema escuro via CSS puro
+* **Conceitos Aplicados:** Uso de **Variáveis CSS** (`:root`) para gerenciamento de cores, implementação de **Sidebar** (menu escondido) e transições suaves
+* **Organização:** Estrutura flexível contendo cabeçalho com navegação, área principal com 3 cards centralizados e rodapé fixo
+
 ---
 > [!NOTE]
 > Os nomes das atividades seguem o padrão passado em sala, mesmo havendo repetição na numeração.
