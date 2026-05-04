@@ -38,7 +38,7 @@ Este repositório contém os projetos e atividades da disciplina de **Desenvolvi
 * **Conceitos Aplicados:** Grid System, Componentes (`navbar`, `alert`e `cards`) e Utilitários
 * **Organização:** Barra de navegação com logo e links integrados, grid dividido em duas colunas, contendo uma imagem à esquerda e texto biográfico com botão à direita e seção de cartões dispostos horizontalmente no desktop para detalhamento de Discografia, Prêmios e Turnês
 
-### Atividade 06 - Javascript (Aula 20/04)
+### Atividade 06 - Javascript (Aula 27/04)
 * **Foco:** Desenvolvimento de um sistema funcional para gerenciamento de alunos utilizando JavaScript puro e conceitos de Programação Orientada a Objetos
 * **Conceitos Aplicados:** Classes e Construtores, Manipulação de Arrays (`map`, `find`, `splice`), Estruturas de Repetição (`do...while`) e Validação de Dados
 * **Organização:** Criação de uma classe `Aluno` para modelagem dos dados, implementação de funções para CRUD completo (Adicionar, Listar, Buscar, Alterar e Remover) e menu interativo
