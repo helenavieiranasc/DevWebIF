@@ -1,0 +1,12 @@
+    .card {
+      border: 1px solid #ccc;
+      padding: 8px;
+      width: 150px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 8px;
+    }
+ 
+    .card img {
+      width: 100%;
+    }

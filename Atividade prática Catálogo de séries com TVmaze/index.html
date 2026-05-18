@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Séries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Catálogo de Séries</h1>
+
+  <form id="formBusca">
+    <input type="text" id="busca" placeholder="Digite o nome de uma série">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <p id="mensagem"></p>
+  <div id="resultado"></div>
+
+  <script>
+    const form = document.querySelector("#formBusca");
+    const resultado = document.querySelector("#resultado");
+    const mensagem = document.querySelector("#mensagem");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const texto = document.querySelector("#busca").value.trim();
+
+      if (texto === "") {
+        mensagem.textContent = "Digite algo para buscar.";
+        return;
+      }
+
+      resultado.innerHTML = "";
+      mensagem.textContent = "Carregando...";
+
+      try {
+        const resposta = await fetch(`https://api.tvmaze.com/search/shows?q=${texto}`);
+        const dados = await resposta.json();
+
+        mensagem.textContent = "";
+
+        if (dados.length === 0) {
+          mensagem.textContent = "Nenhuma série encontrada.";
+          return;
+        }
+
+        dados.forEach(item => {
+          const serie = item.show;
+
+          const card = document.createElement("div");
+          card.classList.add("card");
+
+          if (serie.image && serie.image.medium) {
+            const img = document.createElement("img");
+            img.src = serie.image.medium;
+            img.alt = serie.name;
+            card.appendChild(img);
+          } else {
+            const semImg = document.createElement("div");
+            semImg.classList.add("sem-imagem");
+            semImg.textContent = "Sem imagem";
+            card.appendChild(semImg);
+          }
+
+          const nome = document.createElement("h3");
+          nome.textContent = serie.name;
+          card.appendChild(nome);
+
+          const score = document.createElement("p");
+          score.textContent = "Score: " + (item.score ? item.score : "N/A");
+          card.appendChild(score);
+
+          resultado.appendChild(card);
+        });
+
+      } catch (erro) {
+        mensagem.textContent = "Erro ao buscar séries.";
+        console.error(erro);
+      }
+    });
+  </script>
+
+</body>
+</html>
