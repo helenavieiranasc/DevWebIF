@@ -48,6 +48,11 @@ Este repositório contém os projetos e atividades da disciplina de **Desenvolvi
 * **Conceitos Aplicados:** Manipulação de DOM (`createElement`), Eventos (`addEventListener`), Condicionais e Classes Dinâmicas
 * **Organização:** Interface com campo de entrada e botão para novas tarefas, exibição de cards dinâmicos via JavaScript e botões de ação dentro dos cards para alternar prioridades (Alta, Média e Baixa) com mudança de cores em tempo real
 
+### Atividade 08 - Prática Catálogo de séries com TVmaze (Aula 18/05)
+* **Foco:** Criação de uma aplicação web integrando formulários, uso de API externa (TVmaze) e manipulação dinâmica de elementos via DOM
+* **Conceitos Aplicados:** Requisições assíncronas com `fetch`, conversão de dados JSON, renderização com `createElement`/`appendChild` e tratamento de exceções com `try/catch`
+* **Organização:** Estrutura contendo input e botão de busca com limpeza prévia de resultados, exibição dinâmica de cards contendo imagem, nome e score da série, incluindo tratamento para ausência de imagem e feedback  para buscas sem retorno
+
 ---
 > [!NOTE]
 > Os nomes das atividades seguem o padrão passado em sala, mesmo havendo repetição na numeração.
